@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Poppins:wght@200&display=swap');
+/*estructura*/
+html{
+    font-family: 'Arvo', serif;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;  
+}
+.row{
+    display: flex;
+    
+}
+#opcion1{
+    padding-right: 100px;
+}
+#opcion2{
+    padding-left: 125px;
+    padding-right: 100px;
+}
+#opcion3{
+    padding-left: 125px;
+    padding-right: 100px;
+}
+.column-2{
+    width: 100%;
+    background-color: rgb(16,84,68);
+    color: white;
+    padding-left: 25px;
+}
+.column-4{
+    width: 65%;
+}
+.column-5 a{
+    background-color: yellow;
+    display: flex;
+    width: 35%;
+}
+.column-6{
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+.column-3{  
+    width: 100%;
+    text-align: center;
+    padding: 100px;
+}
+/*Letra y medidas de estas*/
+
+/*estilos de letras*/
+.top-ventas{
+    background-color: rgb(24,124,100);
+    height: 60px;
+    padding: 20px;
+    width: 150%;
+    color: white;
+}
+
+/*estilos estructura y paddings*/
+div > .oculto {
+    display: none;
+  }
+  div > .oculto:target {
+    display: block;
+}
+
+.button {
+    border-radius: 0;
+    border: 1px solid orange;
+    background-color: orange;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    border-radius: 0;
+    border: 1px solid orange;
+    background-color: orange;
+    padding: 15px ;
+}
+hr {
+    height: 4px;
+    background-color: orange;
+  }
+
+.libros {
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
+.column-6{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    background-color: white;
+    border-color: white;
+}
+.descripcion {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    padding-bottom: 50px;
+}
+.descripcion-read{
+    padding-left: 125px;
+    padding-bottom: 100px;
+}
+.column-6 img{
+    width: 80%;
+    padding-left: 0px;
+    float: 100px;
+}
+
+@media (max-width: 767px) {
+    body {
+      padding: 0 20px;
+    }
+    .row {
+      flex-direction: column;
+    }
+    #opcion1, #opcion2, #opcion3 {
+      padding: 0;
+    }
+    .column-2 {
+      width: 100%;
+      padding: 25px;
+    }
+    .column-4 {
+      width: 100%;
+    }
+    .column-5 a {
+      width: 100%;
+    }
+    .column-6 {
+      width: 100%;
+      float: none;
+    }
+    .descripcion-read {
+      padding-left: 0;
+    }
+    .column-6 img {
+      width: 100%;
+      padding: 0;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  
